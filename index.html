@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validaciones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="body">
+    <!--Práctica de validaciones - Juan Antonio Feliciano Acatitlan - Seguridad informática-->
+    <div class="container">
+        <h1 class="titulo_principal">Formulario de creación de cuenta</h1>
+        <br>
+
+        <!--Formulario de registro-->
+        <form id="registroForm">
+
+            <!--Nombre de pila-->
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre de pila"><br>
+            <!--Apellidos del usuario-->
+            <label for="apellido">Apellidos:</label><br>
+            <input type="text" name="apellido" id="apellido" placeholder="Ap paterno Ap materno"><br>
+
+            <!--Correo electrónico del usuario-->
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" name="email" id="email" placeholder="juan.antonio@gmail.com"><br>
+            
+            <!--Contraseña del usuario-->
+            <label for="password">Contraseña:</label><br>
+            <input type="password" name="password" id="password"><br>
+
+            <!--Fecha de nacimiento del usuario dado que asi está configurada la BD-->
+            <label for="fnac">Fecha de nacimiento:</label><br>
+            <input type="date" name="fnac" id="fnac"><br>
+
+            <!--Numero de telefono-->
+            <label for="numtel">Numero de telefono:</label><br>
+            <input type="text" name="numtel" id="numtel"><br>
+            
+            <!--Entidad federativa de nacimiento del usuario-->
+            <label for="lnac">Lugar de nacimiento:</label><br>
+            <select id="lnac" placeholder=""  name="lnac" required>
+                <option value="" >--Seleccione su estado de procedencia--</option>
+                <option value="Aguascalientes">Aguascalientes</option>
+                <option value="Baja California">Baja California</option>
+                <option value="Baja California Sur">Baja California Sur</option>
+                <option value="Campeche">Campeche</option>
+                <option value="Chiapas">Chiapas</option>
+                <option value="Chihuahua">Chihuahua</option>
+                <option value="Coahuila">Coahuila</option>
+                <option value="Colima">Colima</option>
+                <option value="Ciudad de México">Ciudad de México</option>
+                <option value="Durango">Durango</option>
+                <option value="Guanajuato">Guanajuato</option>
+                <option value="Guerrero">Guerrero</option>
+                <option value="Hidalgo">Hidalgo</option>
+                <option value="Jalisco">Jalisco</option>
+                <option value="Estado de México">Estado de México</option>
+                <option value="Michoacán">Michoacán</option>
+                <option value="Morelos">Morelos</option>
+                <option value="Nayarit">Nayarit</option>
+                <option value="Nuevo León">Nuevo León</option>
+                <option value="Oaxaca">Oaxaca</option>
+                <option value="Puebla">Puebla</option>
+                <option value="Querétaro">Querétaro</option>
+                <option value="Quintana Roo">Quintana Roo</option>
+                <option value="San Luis Potosí">San Luis Potosí</option>
+                <option value="Sinaloa">Sinaloa</option>
+                <option value="Sonora">Sonora</option>
+                <option value="Tabasco">Tabasco</option>
+                <option value="Tamaulipas">Tamaulipas</option>
+                <option value="Tlaxcala">Tlaxcala</option>
+                <option value="Veracruz">Veracruz</option>
+                <option value="Yucatán">Yucatán</option>
+                <option value="Zacatecas">Zacatecas</option>
+            </select> <br>            
+            
+            <!--Genero del usuario-->
+            <label for="genero">Genero</label> <br>
+            <select id="genero" name="genero" required>
+              <option value="" disabled>--Seleccione el genero--</option>
+              <option value="M">Masculino</option>
+              <option value="F">Femenino</option>
+            </select> <br> <br>
+            
+            <input type="reset">
+            <input type="submit">
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
